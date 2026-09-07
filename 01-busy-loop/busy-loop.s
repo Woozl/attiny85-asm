@@ -7,7 +7,7 @@
 ; in its 8 bits, but we also need to keep careful track of how
 ; many clock cycles each instruction we use takes.
 
-commandscommands
+
 
 ;=== new instructions ===;
 
