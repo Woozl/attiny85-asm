@@ -39,7 +39,7 @@ sbi DDRB 4
 
 loop:
   ; instead, if we write a 1 to the bit in the pin input register,
-  ; it toggles the PORTB4put of the pin. This only works when the pin
+  ; it toggles the output of the pin. This only works when the pin
   ; is in output mode.
   sbi PINB, 4
   rjmp delay ; noop
