@@ -18,6 +18,10 @@ out SPL, r16
 ; subroutine to push values from registers onto the stack and
 ; pop them off at the end to restore them for the calling code.
 
+; note that if our calling code required the use of SREG, we
+; should also push that onto the stack. In this example it 
+; doesn't matter, but that could be the source of unusual bugs.
+
 ; ======== new instructions ======== ;
 
 ; push - push register on stack
