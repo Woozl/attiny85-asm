@@ -11,7 +11,7 @@
 
 ; First we need to write 1 to bit 4 (DDB4) of the DDRB register
 ; to set the direction as output
-sbi DDRB 4
+sbi DDRB, 4
 
 ; Then, we could toggle the pin on (1) and off (0) by setting the
 ; PORTB4 bit in the PORTB register
