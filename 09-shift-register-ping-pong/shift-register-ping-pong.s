@@ -146,6 +146,9 @@ main:
 ; this interrupt fires every 1ms. We want to move the LED by one
 ; position every ~143 ms, so lets keep that count in r18
 timer:
+  ; we need to push SREG onto the stack because the main subroutine
+  ; is using a dec/brne pair and this interrupt could execute between
+  ; those instructions and cause an incorrect shift out once it returns
   in r21, SREG
   push r21
 
